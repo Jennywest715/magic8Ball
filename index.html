@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" crossorigin="anonymous">
     <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Magic 8 Ball</title>
 </head>
 <body>
-    
+    <div id="wrapper">
+        <h1 id="headerText">MAGIC 8 BALL</h1>
+        <h3 id="secondaryText">YOU WANT TO KNOW YOUR FUTURE HOLDS?</h3>
+        <video id="myVideo"  autoplay loop >
+            <source src="/magic8Ball/pexels-mathias-de-rivo-6815528.mp4" alt="electric Ball">
+        </video>
+        <input id="input" type="text" placeholder="ASK ME ANYTHING" value="" />
+        <button id="getAnswer">ASK</button>
+        <div id="answerContainer">
+            <h3 id="answer"></h3>
+        </div>
+
+        <div id="bgMusic">
+            <audio id="music" controls loop>
+                <source src="/magic8Ball/moose.mp3" type="audio/mp3">
+            </audio>
+            <script>
+                let audio = document.getElementById("music");
+                audio.volume=0.2;
+            </script>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Joan&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Ibarra+Real+Nova&family=Joan&family=Mochiy+Pop+One&family=Playfair+Display:wght@500;700&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Ibarra+Real+Nova&family=Joan&family=Mochiy+Pop+One&family=Playfair+Display:wght@500;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@700&display=swap');
+
+
+#myVideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-width: 100vh;
+    object-fit: cover;
+    opacity: 0.9;
+    background-blend-mode: overlay;
+}
+
+
+#bgMusic{
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 5;
+}
+#music{
+    background-color: transparent;
+    color: fff;
+    font-size: 50px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    opacity: .5;
+    z-index: 5;
+    transition: all linear .2s;
+}
+#music:hover{
+    opacity: 1;
+}
