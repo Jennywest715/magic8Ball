@@ -5,23 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" crossorigin="anonymous">
-    <script src="js/script.js" defer></script>
+    <script src="/magic8Ball/js/script.js"></script>
+    <!-- removed the defer so it reads the 8 before the response -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Magic 8 Ball</title>
 </head>
 <body>
     <div id="wrapper">
-        <h1 id="headerText">MAGIC 8 BALL</h1>
-        <h3 id="secondaryText">YOU WANT TO KNOW YOUR FUTURE HOLDS?</h3>
+        <h1 id="headerText">THE ALL KNOWING<br>ENERGY 8 BALL</h1>
+        <h3 id="secondaryText">WHAT DOES YOUR FUTURE HOLD?</h3>
         <video id="myVideo"  autoplay loop >
             <source src="/magic8Ball/pexels-mathias-de-rivo-6815528.mp4" alt="electric Ball">
         </video>
-        <input id="input" type="text" placeholder="ASK ME ANYTHING" value="" />
-        <button id="getAnswer">ASK</button>
-        <div id="answerContainer">
-            <h3 id="answer"></h3>
+        <div class="inputarea">
+            <input id="inputs" type="text" placeholder="ASK ME ANYTHING" value="" />
+            <button id="getAnswer" onclick="myFunction()">ASK</button>
         </div>
-
+        <div class="eightbg">
+            <div id="answerContainer">
+                <p id="response">8</p>
+            </div>
+        </div>
         <div id="bgMusic">
             <audio id="music" controls loop>
                 <source src="/magic8Ball/moose.mp3" type="audio/mp3">
@@ -32,5 +36,9 @@
             </script>
         </div>
     </div>
+    <footer>
+        <p>&copy; Souphany West 2022</p>
+        <a href=https://jennywest715.github.io/Jennywest715/main.html><i class="fa-solid fa-user-astronaut"></i></a>
+    </footer>
 </body>
 </html>

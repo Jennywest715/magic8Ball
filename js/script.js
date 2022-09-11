@@ -8,38 +8,26 @@ Replace the input field with the user's question when displaying the answer
 */
 
 
-
-const userName = "";
-
-userName ? console.log(`Welcome, ${userName}!`) : console.log("Welcome!");
-
-let userQuestion = ""
-
-// document.getElementById("myButton").onclick = function(){
-//     let myName = document.getElementById("myText").value;
-    
-// }
-
 let answerButton = document.querySelector("#getAnswer");
 let magicVideo = document.querySelector("#myVideo")
 
-answerButton.addEventListener("click",()=>{
-    magicVideo.classList.toggle("wiggle")
-    setTimeout(()=>{
-        magicVideo.classList.toggle("wiggle")
-    },3000)
 
-})
 
 //Answer ARRAY 20
-let answers = ["Yes!", "No", "Very Unlikly", "Oh Heavens No", "Ask Your Mother First", "Totally!",
-"Abosolutly!", "Nah..", "Perhaps", "Try again later", "Heck Yeah!", "Bad Idea", "Good Idea!", "Love it! Yes!",
+let answers = ["Yes!", "No", "Very Unlikly", "Oh Heavens No", "Ask Your Mom", "Totally!",
+"Make it happen", "Nah..", "Perhaps", "I Know Everything... Except That", "Heck Yeah!", "Bad Idea", "Good Idea!", "Love it! Yes!",
 "Maybe", "You Wish", "I forgot the question", "Ain't Nobody Got Time For That", "I'll Tell You Later", "Ask Google",
-"Look to the sky for your answer"]
+"Look to the sky for your answer","Ask Your Dad"]
 
-let random = Math.random()
+document.getElementById("response").innerHTML=answers;
 
-console.log(random)*answers.length;
+function myFunction(){
+    answers.sort(function(a,b){return 0.5 - Math.random()});
+    document.getElementById("response").innerHTML=answers[0];
+    document.getElementById("response").style.fontSize="21px";
+}
+
+
 
 let video = document.getElementById("myVideo");
 
