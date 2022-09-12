@@ -6,28 +6,41 @@ Create an "ask" function that when clicked,
 will choose a random 8ball image and insert it into your "answers" div
 Replace the input field with the user's question when displaying the answer
 */
+$(document).ready(function(){
+  
 
 
-let answerButton = document.querySelector("#getAnswer");
-let magicVideo = document.querySelector("#myVideo")
 
-
+var magic8Ball = {};
+magic8Ball.answerButton = document.querySelector("#getAnswer");
+magic8Ball.magicVideo = document.querySelector("#myVideo")
 
 //Answers ARRAY 20
-const answers = ["Yes!", "No", "Very Unlikly", "Oh Heavens No", "Ask Your Mom", "Totally!",
+magic8Ball.answers = ["Yes!", "No", "Very Unlikly", "Oh Heavens No", "Ask Your Mom", "Totally!",
 "Make it happen", "Nah..", "Perhaps", "I Know Everything... Except That", "Heck Yeah!", "Bad Idea", "Good Idea!", "Love it! Yes!",
 "Maybe", "You Wish", "I forgot the question", "Ain't Nobody Got Time For That", "I'll Tell You Later", "Ask Google",
 "Look to the sky for your answer","Ask Your Dad","Keep Looking For The Answer."]
 
 
-function myFunction(){
-    answers.sort(function(a,b){return 0.5 - Math.random()});
-    document.getElementById("response").innerHTML=answers[0];
+magic8Ball.answer = function(){
+    $(".eightbg").effect("shake");
+    magic8Ball.answers.sort(function(a,b){return 0.5 - Math.random()});
+    document.getElementById("response").innerHTML=magic8Ball.answers[0];
     document.getElementById("response").style.fontSize="20px";
 }
 
+var onClick = function()
+{
+  if (document.getElementById("inputs").innerHTML == '') {
+    alert("Please enter a question");
+    return;
+  }
+  magic8Ball.answer();
+};
 
-function emptyStr() {
+$("#getAnswer").click( onClick );
+
+magic8Ball.empty = function() {
     const str = str.length;
     if (typeof str === "" && str.length === 0){
         alert(`Please Ask A Question Before I Can Answer!`)
@@ -35,14 +48,8 @@ function emptyStr() {
     }
 }
 
+magic8Ball.video = document.getElementById("myVideo");
 
-
-
-let video = document.getElementById("myVideo");
-
-
-
-
-
-const input = document.getElementById("input");
-const button = document.getElementById("addButton");
+magic8Ball.input = document.getElementById("input");
+magic8Ball.button = document.getElementById("addButton");
+});
