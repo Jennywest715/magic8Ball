@@ -17,7 +17,7 @@ let magicVideo = document.querySelector("#myVideo")
 const answers = ["Yes!", "No", "Very Unlikly", "Oh Heavens No", "Ask Your Mom", "Totally!",
 "Make it happen", "Nah..", "Perhaps", "I Know Everything... Except That", "Heck Yeah!", "Bad Idea", "Good Idea!", "Love it! Yes!",
 "Maybe", "You Wish", "I forgot the question", "Ain't Nobody Got Time For That", "I'll Tell You Later", "Ask Google",
-"Look to the sky for your answer","Ask Your Dad"]
+"Look to the sky for your answer","Ask Your Dad","Keep Looking For The Answer."]
 
 
 function myFunction(){
