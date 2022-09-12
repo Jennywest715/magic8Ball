@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" crossorigin="anonymous">
-    <script src="/magic8Ball/js/script.js"></script>
+    <script src="./js/script.js"></script>
     <!-- removed the defer so it reads the 8 before the response -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Magic 8 Ball</title>
@@ -15,11 +17,11 @@
         <h1 id="headerText">THE ALL KNOWING<br>ENERGY 8 BALL</h1>
         <h3 id="secondaryText">WHAT DOES YOUR FUTURE HOLD?</h3>
         <video id="myVideo"  autoplay loop >
-            <source src="/magic8Ball/pexels-mathias-de-rivo-6815528.mp4" alt="electric Ball">
+            <source src="./pexels-mathias-de-rivo-6815528.mp4" alt="electric Ball">
         </video>
         <div class="inputarea">
             <input id="inputs" type="text" onfocus="this.value=''" placeholder="ASK ME ANYTHING!" value="" />
-            <button id="getAnswer" onclick="myFunction()">ASK</button>
+            <button id="getAnswer">ASK</button>
         </div>
         <div class="eightbg">
             <div id="answerContainer">
@@ -28,7 +30,7 @@
         </div>
         <div id="bgMusic">
             <audio id="music" controls loop>
-                <source src="/magic8Ball/moose.mp3" type="audio/mp3">
+                <source src="./moose.mp3" type="audio/mp3">
             </audio>
             <script>
                 let audio = document.getElementById("music");
