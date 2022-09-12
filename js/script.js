@@ -10,7 +10,7 @@ $(document).ready(function(){
   
 
 
-var magic8Ball = {};
+let magic8Ball = {};
 magic8Ball.answerButton = document.querySelector("#getAnswer");
 magic8Ball.magicVideo = document.querySelector("#myVideo");
 
@@ -35,7 +35,7 @@ magic8Ball.answer = function(){
 
 var onClick = function()
 {
-  if (document.getElementById("inputs").innerHTML == '') {
+  if (document.getElementById("inputs").innerHTML === '') {
     alert("Please enter a question");
     return;
   }
@@ -44,11 +44,5 @@ var onClick = function()
 
 $("#getAnswer").click( onClick );
 
-magic8Ball.empty = function() {
-    const str = str.length;
-    if (typeof str === "" && str.length === 0){
-        return `Please Ask A Question Before I Can Answer!`
-    }
-}
 
 });
