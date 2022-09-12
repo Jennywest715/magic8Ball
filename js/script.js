@@ -35,7 +35,7 @@ $(document).ready(function(){
     
     var onClick = function()
     {
-      if (document.getElementById("inputs").value == '') {
+      if (document.getElementById("inputs").value === '') {
         alert("Please enter a question");
         return;
       }
