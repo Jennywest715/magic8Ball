@@ -41,7 +41,7 @@ input{
     font-size: 18px;
     border-radius: 30px;
     text-align: left;
-    border:0;
+    border-style: solid;
 }
 input:focus{
     outline:5px solid rgb(42, 15, 66);
