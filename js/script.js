@@ -35,7 +35,7 @@ magic8Ball.answer = function(){
 
 var onClick = function()
 {
-  if (document.getElementById("inputs").innerHTML == '') {
+  if (document.getElementById("inputs").value == '') {
     alert("Please enter a question");
     return;
   }
