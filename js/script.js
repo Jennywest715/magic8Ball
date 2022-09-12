@@ -11,13 +11,16 @@ Replace the input field with the user's question when displaying the answer
 let answerButton = document.querySelector("#getAnswer");
 let magicVideo = document.querySelector("#myVideo")
 
+let video = document.getElementById("myVideo");
 
+const input = document.getElementById("input");
+const button = document.getElementById("addButton");
 
 //Answers ARRAY 20
 const answers = ["Yes!", "No", "Very Unlikly", "Oh Heavens No", "Ask Your Mom", "Totally!",
 "Make it happen", "Nah..", "Perhaps", "I Know Everything... Except That", "Heck Yeah!", "Bad Idea", "Good Idea!", "Love it! Yes!",
 "Maybe", "You Wish", "I forgot the question", "Ain't Nobody Got Time For That", "I'll Tell You Later", "Ask Google",
-"Look to the sky for your answer","Ask Your Dad","Keep Looking For The Answer."]
+"Look to the sky for your answer","Ask Your Dad","Keep Looking For The Answer."];
 
 
 function myFunction(){
@@ -30,19 +33,8 @@ function myFunction(){
 function emptyStr() {
     const str = str.length;
     if (typeof str === "" && str.length === 0){
-        alert(`Please Ask A Question Before I Can Answer!`)
-        return;
+        return `Please Ask A Question Before I Can Answer!`
     }
 }
 
 
-
-
-let video = document.getElementById("myVideo");
-
-
-
-
-
-const input = document.getElementById("input");
-const button = document.getElementById("addButton");
