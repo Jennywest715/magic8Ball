@@ -13,18 +13,26 @@ let magicVideo = document.querySelector("#myVideo")
 
 
 
-//Answer ARRAY 20
-let answers = ["Yes!", "No", "Very Unlikly", "Oh Heavens No", "Ask Your Mom", "Totally!",
+//Answers ARRAY 20
+const answers = ["Yes!", "No", "Very Unlikly", "Oh Heavens No", "Ask Your Mom", "Totally!",
 "Make it happen", "Nah..", "Perhaps", "I Know Everything... Except That", "Heck Yeah!", "Bad Idea", "Good Idea!", "Love it! Yes!",
 "Maybe", "You Wish", "I forgot the question", "Ain't Nobody Got Time For That", "I'll Tell You Later", "Ask Google",
 "Look to the sky for your answer","Ask Your Dad"]
 
-document.getElementById("response").innerHTML=answers;
 
 function myFunction(){
     answers.sort(function(a,b){return 0.5 - Math.random()});
     document.getElementById("response").innerHTML=answers[0];
-    document.getElementById("response").style.fontSize="21px";
+    document.getElementById("response").style.fontSize="20px";
+}
+
+
+function emptyStr() {
+    const str = str.length;
+    if (typeof str === "" && str.length === 0){
+        alert(`Please Ask A Question Before I Can Answer!`)
+        return;
+    }
 }
 
 

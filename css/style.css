@@ -69,7 +69,7 @@ h1{
     text-align: center;
     z-index: 5;
     color: #FFD700;
-    font-size: 75px;
+    font-size: 60px;
     
 }
 h3{
@@ -92,22 +92,26 @@ h3{
     display: flex;
     align-items:center;
     justify-content: center;
-    width: 190px;
-    height: 190px;
+    width: 180px;
+    height: 180px;
     padding:5px;
     margin: 20px auto 20px auto;
     background-color: white;
     border-radius: 50%;
     font-weight: bold;
+    opacity: .8;
 }
 .eightbg{
-    width: 300px;
-    height: 300px;
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 30px;
+    width: 280px;
+    height: 280px;
     background-color: black;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     opacity: .9;
 }
 
@@ -128,7 +132,6 @@ h3{
     margin: 0 auto;
     opacity: .5;
     z-index: 5;
-    transition: all linear .2s;
 }
 #music:hover{
     opacity: 1;
