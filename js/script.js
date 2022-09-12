@@ -10,7 +10,7 @@ $(document).ready(function(){
   
 
 
-    var magic8Ball = {};
+    let magic8Ball = {};
     magic8Ball.answerButton = document.querySelector("#getAnswer");
     magic8Ball.magicVideo = document.querySelector("#myVideo");
     
@@ -26,29 +26,22 @@ $(document).ready(function(){
     "Look to the sky for your answer","Ask Your Dad","Keep Looking For The Answer."];
     
     
-    magic8Ball.answer = function(){
-        $(".eightbg").effect("shake");
-        magic8Ball.answers.sort(function(a,b){return 0.5 - Math.random()});
-        document.getElementById("response").innerHTML=magic8Ball.answers[0];
-        document.getElementById("response").style.fontSize="20px";
-    }
-    
-    var onClick = function()
-    {
-      if (document.getElementById("inputs").value === '') {
-        alert("Please enter a question");
-        return;
-      }
-      magic8Ball.answer();
-    };
-    
-    $("#getAnswer").click( onClick );
-    
-    magic8Ball.empty = function() {
-        const str = str.length;
-        if (typeof str === "" && str.length === 0){
-            return `Please Ask A Question Before I Can Answer!`
+        magic8Ball.answer = function(){
+            $(".eightbg").effect("shake"); // shake it like a polaroid picture
+            magic8Ball.answers.sort(function(a,b){return 0.5 - Math.random()}); // get random answers
+            document.getElementById("response").innerHTML=magic8Ball.answers[0]; //have answers show up
+            document.getElementById("response").style.fontSize="20px"; // sizing for answers
         }
-    }
     
-    });
+        let onClick = function() // call the function
+        {
+        if (document.getElementById("inputs").value === '') { //returning a response to empty string
+            alert("Please enter a question");
+            return;
+        }
+        magic8Ball.answer(); 
+        };
+    
+    $("#getAnswer").click( onClick ); // get answers on click
+    
+});
