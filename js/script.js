@@ -28,6 +28,8 @@ $(document).ready(function(){
     
         magic8Ball.answer = function(){
             $(".eightbg").effect("shake"); // shake it like a polaroid picture
+            $(".eightbg").attr("src", 
+            "magic8Ball/imgbin-magic-8-ball-eight-ball-billiard-balls-billiards-magic-8-ball-RhNbzRCdGQrSafGfvBYwXHY9q.jpg");
             magic8Ball.answers.sort(function(a,b){return 0.5 - Math.random()}); // get random answers
             document.getElementById("response").innerHTML=magic8Ball.answers[0]; //have answers show up
             document.getElementById("response").style.fontSize="20px"; // sizing for answers
