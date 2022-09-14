@@ -28,7 +28,7 @@ $(document).ready(function(){
     
         magic8Ball.answer = function(){
             $(".eightbg").effect("shake"); // shake it like a polaroid picture
-// $("image").attr("src", "magic8Ball/magic8ball_empty.png");
+            $("#image").attr("src", "magic8ball_9.png");
             magic8Ball.answers.sort(function(a,b){return 0.5 - Math.random()}); // get random answers
             document.getElementById("response").innerHTML=magic8Ball.answers[0]; //have answers show up
             document.getElementById("response").style.fontSize="20px"; // sizing for answers
@@ -41,7 +41,6 @@ $(document).ready(function(){
             return;
         }
         magic8Ball.answer()
-// $("#image").attr("src", "magic8Ball/magic8ball_9.png"); 
         
         };
     

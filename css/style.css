@@ -12,8 +12,6 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
-    
 }
 
 #myVideo{
@@ -33,7 +31,6 @@ body{
     justify-content: center;
 }
 input{
-    position: absolute;
     top: 65vh;
     padding: 15px 70px 15px 15px;
     margin-top: 30px;
@@ -45,8 +42,12 @@ input{
 input:focus{
     outline:5px solid rgb(42, 15, 66);
 }
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
 button{
-    position: absolute;
     top:75vh;
     padding: 10px 80px;
     font-size: 20px;
@@ -79,12 +80,15 @@ h3{
     font-size:30px;
 }
 #response{
-    width: 70px;
-    color:black;
-    border-radius: 50%;
+    color:red;
+    /* border-radius: 50%; */
     text-align: center;
     font-size: 110px;
     font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 /* #answerContainer{
     position: relative;
@@ -100,9 +104,8 @@ h3{
     font-weight: bold;
     opacity: .8; */
     /* rgb(255, 0, 221) */
-/* }
 .eightbg{
-    position:relative;
+    /* position:relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,17 +116,24 @@ h3{
     height: 290px;
     background-color: black;
     border-radius: 50%;
-    opacity: .9;
-} */
+    opacity: .9; */
+    position: relative;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    left: 20%;
+    margin: 20px;
+} 
 
 #image{
     position: relative;
     display: flex;
     align-items:center;
     justify-content: center;
-    height: 200px;
-    width: 200px
-    
+    height: 100%;
+    width: 100%;
 }
 #bgMusic{
     position: absolute;

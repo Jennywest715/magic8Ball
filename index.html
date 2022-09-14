@@ -19,17 +19,15 @@
         <!-- <video id="myVideo"  autoplay loop >
             <source src="/magic8Ball/pexels-mathias-de-rivo-6815528.mp4" alt="electric Ball">
         </video> -->
+        <div class="eightbg">
+            <img id="image" alt="Empty 8 ball" src="./magic8ball_empty.png">
+            <p id="response"> </p>
+        </div>
         <div class="inputarea">
             <input id="inputs" type="text" onfocus="this.value=''" placeholder="ASK ME ANYTHING!" value="" />
-            <button id="getAnswer">ASK</button>
         </div>
-        <div class="eightbg">
-            <div id="answerContainer">
-                <p id="response"> 
-                    <img id="image" alt="Empty 8 ball" src="./magic8ball_empty.png" 
-                     id="imgClickAndChange" onclick="changeImage()"/> 
-                    </p>
-            </div>
+        <div class="button">
+            <button id="getAnswer">ASK</button>
         </div>
         <div id="bgMusic">
             <audio id="music" controls loop>
