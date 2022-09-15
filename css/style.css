@@ -20,9 +20,7 @@ body{
     left: 0;
     width: 100vw;
     height: 100vh;
-    min-width: 100vh;
     object-fit: cover;
-    /* opacity: 0.9; */
     background-blend-mode: overlay;
     z-index: -1;
 }
@@ -33,7 +31,7 @@ body{
 }
 input{
     top: 65vh;
-    padding: 15px 80px 15px 15px;
+    padding: 10px 70px 10px 10px;
     font-size: 18px;
     border-radius: 30px;
     text-align: left;
@@ -69,7 +67,7 @@ h1{
     text-align: center;
     z-index: 5;
     color: #FFD700;
-    font-size: 60px;
+    font-size: 50px;
     
 }
 h3{
@@ -77,7 +75,7 @@ h3{
     text-align: center;
     z-index: 5;
     color: #FFD700;
-    font-size:30px;
+    font-size:20px;
 }
 #response{
     color:red;
@@ -93,12 +91,12 @@ h3{
 .eightbg{
     position: relative;
     text-align: center;
-    height: 350px;
-    width: 350px;
+    height: 330px;
+    width: 330px;
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 20%;
+    left: 10%;
     margin: 20px;
 } 
 
@@ -144,7 +142,7 @@ footer a{
     justify-content: center;
     align-items: flex-end;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold; 
     margin-top: 10px;
     margin-bottom: 10px;
