@@ -31,7 +31,7 @@ $(document).ready(function(){
             $("#image").attr("src", "magic8ball_9.png");
             magic8Ball.answers.sort(function(a,b){return 0.5 - Math.random()}); // get random answers
             document.getElementById("response").innerHTML=magic8Ball.answers[0]; //have answers show up
-            document.getElementById("response").style.fontSize="24px"; // sizing for answers
+            document.getElementById("response").style.fontSize="22px"; // sizing for answers
         }
     
         let onClick = function() // call the function
