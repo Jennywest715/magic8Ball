@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Ibarra+Real+Nova&family=Joan&family=Mochiy+Pop+One&family=Playfair+Display:wght@500;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@700&display=swap');
 
 *{
-    padding: 0;
     box-sizing: border-box;
     font-family:'Poppins', sans-serif; 
 }
@@ -12,6 +11,8 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 10px;
+    padding: 0;
 }
 
 #myVideo{
@@ -69,7 +70,7 @@ h1{
     z-index: 5;
     color: #FFD700;
     font-size: 50px;
-    
+    margin-top: 0;
 }
 h3{
     position: relative;
