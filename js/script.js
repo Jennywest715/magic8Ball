@@ -12,9 +12,6 @@ $(document).ready(function(){
 
     let magic8Ball = {};
     magic8Ball.answerButton = document.querySelector("#getAnswer");
-    magic8Ball.magicVideo = document.querySelector("#myVideo");
-    
-    magic8Ball.video = document.getElementById("myVideo");
     magic8Ball.input = document.getElementById("input");
     magic8Ball.button = document.getElementById("addButton");
     
@@ -47,3 +44,5 @@ $(document).ready(function(){
     $("#getAnswer").click( onClick ); // get answers on click
     
 });
+
+
